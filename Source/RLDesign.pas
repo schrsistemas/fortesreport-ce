@@ -65,7 +65,7 @@ uses
   {$IfDef CLX}
    QForms,
   {$Else}
-   Forms,
+   VCL.Forms,
   {$EndIf}
   RLReport, RLConsts, RLUtils, RLTypes, RLAbout;
 

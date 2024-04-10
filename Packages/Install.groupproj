@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{E27A01AD-E1FF-401A-A80D-63007E119EF6}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="frce.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="dclfrce.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="frce">
+        <MSBuild Projects="frce.dproj"/>
+    </Target>
+    <Target Name="frce:Clean">
+        <MSBuild Projects="frce.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="frce:Make">
+        <MSBuild Projects="frce.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="dclfrce">
+        <MSBuild Projects="dclfrce.dproj"/>
+    </Target>
+    <Target Name="dclfrce:Clean">
+        <MSBuild Projects="dclfrce.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dclfrce:Make">
+        <MSBuild Projects="dclfrce.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="frce;dclfrce"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="frce:Clean;dclfrce:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="frce:Make;dclfrce:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
