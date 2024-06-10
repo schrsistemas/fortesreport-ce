@@ -65,7 +65,7 @@ uses
   {$IfDef CLX}
    QTypes, QGraphics, QControls, QExtCtrls, QForms, QMenus, QClipbrd, QDialogs,
   {$Else}
-   Types, Graphics, Controls, ExtCtrls, Forms, Menus, Clipbrd, Dialogs,
+   Types, VCL.Graphics, VCL.Controls, VCL.ExtCtrls, VCL.Forms, VCL.Menus, VCL.Clipbrd, VCL.Dialogs,
   {$EndIf}
   RLMetaFile, RLConsts, RLUtils;
 

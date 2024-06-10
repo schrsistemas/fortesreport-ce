@@ -58,7 +58,7 @@ uses
   {$IfDef CLX}
    QDialogs,
   {$Else}
-   Dialogs,
+   VCL.Dialogs,
   {$EndIf}
   SysUtils;
 

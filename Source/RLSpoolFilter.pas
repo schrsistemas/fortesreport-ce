@@ -61,7 +61,7 @@ uses
   {$IfDef CLX}
    QTypes, QGraphics, RLMetaCLX,
   {$else}
-   Types, Graphics, RLMetaVCL,
+   Types, VCL.Graphics, RLMetaVCL,
   {$EndIf}
   {$IfDef FPC}
    LCLIntf, LCLType,

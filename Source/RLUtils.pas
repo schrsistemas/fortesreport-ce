@@ -75,7 +75,7 @@ uses
    {$IfDef FMX}
     FMX.Types, FMX.Graphics, FMX.Forms,
    {$Else}
-    Types, Graphics, Forms,
+    Types, VCL.Graphics, VCL.Forms,
    {$EndIf}
   {$EndIf}
   Math;

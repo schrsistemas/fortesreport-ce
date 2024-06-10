@@ -62,12 +62,12 @@ uses
    QTypes, QButtons, QGraphics, QControls, QDialogs, QForms, QExtCtrls,
    QDBCtrls, QMask, RLMetaCLX,
   {$Else}
-   Types, Buttons, Graphics, Controls, Dialogs, Forms, ExtCtrls, DBCtrls,
-   RLMetaVCL, StdCtrls,
+   Types, VCL.Buttons, VCL.Graphics, VCL.Controls, VCL.Dialogs, VCL.Forms, VCL.ExtCtrls, VCL.DBCtrls,
+   RLMetaVCL, VCL.StdCtrls,
    {$IfDef FPC}
     LMessages,
    {$Else}
-    Mask, RlCompilerConsts,
+    VCL.Mask, RlCompilerConsts,
    {$EndIf}
   {$EndIf}
   {$IfDef SUPPORTS_VARIANT}

@@ -63,7 +63,7 @@ uses
   {$IfDef CLX}
    QGraphics, QControls, QForms, QDialogs, QStdCtrls,
   {$Else}
-   Graphics, Controls, Forms, Dialogs, StdCtrls,
+   VCL.Graphics, VCL.Controls, VCL.Forms, VCL.Dialogs, VCL.StdCtrls,
   {$EndIf}
   RLFilters, RLConsts, RLPrinters, RLTypes, RLUtils, RLComponentFactory;
 

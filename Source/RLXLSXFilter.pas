@@ -65,7 +65,7 @@ uses
   {$IfDef CLX}
    Types, QGraphics, RLMetaCLX,
   {$Else}
-   Graphics, RLMetaVCL,
+   VCL.Graphics, RLMetaVCL,
   {$EndIf}
   RLMetaFile, RLConsts, RLTypes, RLUtils, RLFilters, RlCompilerConsts,
   RLXLSXFileFormat;

@@ -61,7 +61,7 @@ uses
   {$IfDef CLX}
    QTypes, QForms, QDialogs,
   {$Else}
-   Types, Forms, Dialogs,
+   Types, VCL.Forms, VCL.Dialogs,
   {$EndIf}
   {$IfDef FPC}
    LCLIntf,

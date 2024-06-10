@@ -61,7 +61,7 @@ uses
   {$IfDef CLX}
    QTypes, Qt, QGraphics, QControls, QForms, QDialogs, QStdCtrls, QExtCtrls, QButtons,
   {$Else}
-   Types, Graphics, Controls, Forms, Dialogs, StdCtrls, ExtCtrls, Buttons,
+   Types, VCL.Graphics, VCL.Controls, VCL.Forms, VCL.Dialogs, VCL.StdCtrls, VCL.ExtCtrls, VCL.Buttons,
   {$EndIf}
   {$IfDef FPC}
    LCLIntf, LCLType,

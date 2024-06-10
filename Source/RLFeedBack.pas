@@ -55,7 +55,7 @@ uses
   {$IfDef CLX}
    QTypes, QGraphics, QForms, QDialogs, QStdCtrls, QExtCtrls, QButtons, QControls, QComCtrls,
   {$Else}
-   types, Graphics, Forms, Dialogs, StdCtrls, ExtCtrls, Buttons, Controls, ComCtrls,
+   types, VCL.Graphics, VCL.Forms, VCL.Dialogs, VCL.StdCtrls, VCL.ExtCtrls, VCL.Buttons, VCL.Controls, VCL.ComCtrls,
   {$EndIf}
   RLUtils, RLComponentFactory;
 

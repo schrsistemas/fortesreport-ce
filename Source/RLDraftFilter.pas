@@ -66,7 +66,7 @@ uses
   {$IfDef CLX}
    QGraphics, RLMetaCLX,
   {$Else}
-   Graphics,
+   VCL.Graphics,
    RLMetaVCL,
    {$IfNDef FPC}
     RlCompilerConsts,

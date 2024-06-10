@@ -61,7 +61,7 @@ uses
   {$IfDef CLX}
    QTypes, QGraphics, QDialogs,
   {$Else}
-   Types, Graphics, Dialogs,
+   Types, VCL.Graphics, VCL.Dialogs,
   {$EndIf}
   RLUtils, RLConsts, RLTypes;
 

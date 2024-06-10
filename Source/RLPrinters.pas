@@ -64,7 +64,7 @@ uses
   {$IfDef CLX}
    QTypes, QGraphics, QDialogs, QPrinters,
   {$Else}
-   Types, Graphics, Dialogs, Printers,
+   Types, VCL.Graphics, VCL.Dialogs, VCL.Printers,
   {$EndIf}
   {$IfDef FPC}
    OSPrinters,
@@ -301,9 +301,9 @@ end;
 function ConvOrientation(AOrientation: TRLSystemOrientation): TPrinterOrientation;
 begin
   if AOrientation = DMORIENT_PORTRAIT then
-    Result := Printers.poPortrait
+    Result := VCL.Printers.poPortrait
   else
-    Result := Printers.poLandscape;
+    Result := VCL.Printers.poLandscape;
 end;
 
 {$IfDef MSWINDOWS}

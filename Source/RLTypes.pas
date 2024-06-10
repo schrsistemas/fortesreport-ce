@@ -55,7 +55,7 @@ uses
   {$IfDef MSWINDOWS}
    Windows,
   {$EndIf}
-  Classes, Printers;
+  Classes, VCL.Printers;
 
 type
   TRLPrinterMetrics = record
