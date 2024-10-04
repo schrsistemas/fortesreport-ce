@@ -55,7 +55,7 @@ uses
   {$IfDef MSWINDOWS}
    Windows,
   {$EndIf}
-   Messages, SysUtils, Math, Contnrs, Classes, VCL.ComCtrls,
+   Messages, SysUtils, Math, Contnrs, System.Classes, VCL.ComCtrls,
   {$IfDef FPC}
    LMessages, LCLIntf, LCLType, LazFileUtils,
   {$EndIf}
@@ -454,7 +454,6 @@ begin
     end;
 end;
 
-{$ifdef VCL}
 const
   key_escape = vk_escape;
   key_home = vk_home;
@@ -470,7 +469,6 @@ const
   key_num_plus = vk_add;
   key_subtract = 189;
   key_num_subtract = vk_subtract;
-{$endif}
 
 constructor TRLPreviewForm.Create(AOwner: TComponent);
 begin
