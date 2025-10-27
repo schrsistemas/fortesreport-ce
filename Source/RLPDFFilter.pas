@@ -49,6 +49,8 @@
 {@unit RLPDFFilter - Implementação do filtro para criação de arquivos PDF. }
 unit RLPDFFilter;
 
+{$Q-}
+{$R-}
 interface
 
 uses
@@ -66,7 +68,7 @@ uses
   {$IfDef CLX}
    QTypes, QGraphics, RLMetaCLX,
   {$Else}
-   Types, VCL.Graphics, RLMetaVCL,
+   Types, Graphics, RLMetaVCL,
   {$EndIf}
   RLMetaFile, RLConsts, RLTypes, RLUtils, RLFilters;
 
